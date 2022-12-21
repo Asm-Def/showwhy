@@ -116,7 +116,7 @@ class DeciInterventionModel:
                     intervention_values=torch.tensor(
                         [], device=self._deci_model.device
                     ),
-                ).numpy()
+                ).cpu().numpy()
             ),
             intervention=self._parse_raw_result(
                 self._deci_model._counterfactual(
@@ -124,7 +124,7 @@ class DeciInterventionModel:
                     W_adj=W_adj,
                     intervention_idxs=intervention_idxs,
                     intervention_values=intervention_values,
-                ).numpy()
+                ).cpu().numpy()
             ),
         )
 

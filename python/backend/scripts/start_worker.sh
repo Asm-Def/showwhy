@@ -5,6 +5,7 @@ if [[ -z "$N_PARALLEL_JOBS" ]]; then
 else
     extra_params="--concurrency $N_PARALLEL_JOBS"
 fi
+extra_params="-P solo"
 
 if [[ -z "${DEBUG}" ]]; then
     # worker debug disabled

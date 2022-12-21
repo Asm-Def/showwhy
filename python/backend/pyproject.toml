@@ -77,3 +77,9 @@ ignore_fail = "return_non_zero"
 
 [tool.isort]
 profile = 'black'
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
