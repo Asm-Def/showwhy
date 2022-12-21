@@ -7,8 +7,8 @@ export N_PARALLEL_JOBS=0
 path=$(dirname $0)
 cd $path/python/backend
 
-source /opt/conda/etc/profile.d/conda.sh
-conda activate causal
+source /opt/anaconda3/etc/profile.d/conda.sh
+conda activate showwhy
 
 if [[ -z "$N_PARALLEL_JOBS" ]]; then
     extra_params=""

@@ -6,8 +6,8 @@ export STORAGE=/data
 d=$(dirname $0)
 cd $d/python/backend
 
-source /opt/conda/etc/profile.d/conda.sh
-conda activate causal
+source /opt/anaconda3/etc/profile.d/conda.sh
+conda activate showwhy
 if [[ -z "${DEBUG}" ]]; then
     # API debug disabled
     echo "Starting backend api with debug disabled"
